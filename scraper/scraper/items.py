@@ -6,13 +6,14 @@
 from scrapy.item import Item, Field
 
 class SteelItem(Item):
-    title = Field()
+    name = Field()
     model = Field()
     size = Field()
     stock = Field()
     price = Field()
     producer = Field()
     producer_location = Field()
+    stock_location = Field()
     reseller = Field()
     reseller_location = Field()
     date = Field()
