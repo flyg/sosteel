@@ -7,6 +7,7 @@ from scrapy.item import Item, Field
 
 class SteelItem(Item):
     name = Field()
+    url = Field()
     model = Field()
     size = Field()
     stock = Field()
@@ -17,3 +18,4 @@ class SteelItem(Item):
     reseller = Field()
     reseller_location = Field()
     date = Field()
+
