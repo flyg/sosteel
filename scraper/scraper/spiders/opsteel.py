@@ -27,6 +27,7 @@ class OpsteelSpider(CrawlSpider):
             object['size']              = webItem.select('./td[2]/text()').extract()[0]
             object['producer']          = webItem.select('./td[4]/text()').extract()[0]
             object['producer_location'] = webItem.select('./td[5]/text()').extract()[0]
+            object['stock_location']    = webItem.select('./td[6]/text()').extract()[0]
             object['price']             = webItem.select('./td[8]/strong/text()').extract()[0]
             object['stock']             = webItem.select('./td[7]/text()').re(r'\r\n\t*(.*)\r\n\t*')[0]
             object['reseller']          = webItem.select('./td[9]/div/a/text()').extract()[0]

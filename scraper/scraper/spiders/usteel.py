@@ -13,7 +13,7 @@ class UsteelSpider(CrawlSpider):
         Rule(SgmlLinkExtractor(allow = ('index.php\?app=buxiu', ), deny = ('id=', )), callback = 'parse_item', follow = True),
     )
 
-    def parse_item(self, response):
+    def parse_base(self, response):
         hxs = HtmlXPathSelector(response)
         webItems = hxs.select('//*//div[@class="result mb10"]//ul[@class="list"]/li')
         objects = [];
@@ -30,3 +30,9 @@ class UsteelSpider(CrawlSpider):
             object['reseller']          = webItem.select('*/span[@class="s8 textL"]/a/@title').extract()[0]
             objects.append(object)
         return objects
+
+    def parse_start_url(self, response):
+        self.parse_base(response)
+
+    def parse_item(self, response):
+        self.parse_base(response)
