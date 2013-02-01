@@ -3,6 +3,7 @@ from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.selector import HtmlXPathSelector
 import time
+import string
 
 class OpsteelSpider(CrawlSpider):
     name = "opsteel"
@@ -21,16 +22,16 @@ class OpsteelSpider(CrawlSpider):
         objects = [];
         for webItem in webItems:
             object = SteelItem()
-            object['name']              = webItem.select('./td[1]/a/text()').extract()[0]
-            object['url']               = "http://www.opsteel.cn" + webItem.select('./td[1]/a/@href').extract()[0]
-            object['model']             = webItem.select('./td[3]/text()').extract()[0]
-            object['size']              = webItem.select('./td[2]/text()').extract()[0]
-            object['producer']          = webItem.select('./td[4]/text()').extract()[0]
-            object['producer_location'] = webItem.select('./td[5]/text()').extract()[0]
-            object['stock_location']    = webItem.select('./td[6]/text()').extract()[0]
-            object['price']             = webItem.select('./td[8]/strong/text()').extract()[0]
-            object['stock']             = webItem.select('./td[7]/text()').re(r'\r\n\t*(.*)\r\n\t*')[0]
-            object['reseller']          = webItem.select('./td[9]/div/a/text()').extract()[0]
+            object['name']              = string.join(webItem.select('./td[1]/a/text()').extract(), "")
+            object['url']               = "http://www.opsteel.cn" + string.join(webItem.select('./td[1]/a/@href').extract(), "")
+            object['model']             = string.join(webItem.select('./td[3]/text()').extract(), "")
+            object['size']              = string.join(webItem.select('./td[2]/text()').extract(), "")
+            object['producer']          = string.join(webItem.select('./td[4]/text()').extract(), "")
+            object['producer_location'] = string.join(webItem.select('./td[5]/text()').extract(), "")
+            object['stock_location']    = string.join(webItem.select('./td[6]/text()').extract(), "")
+            object['price']             = string.join(webItem.select('./td[8]/strong/text()').extract(), "")
+            object['stock']             = string.join(webItem.select('./td[7]/text()').re(r'\r\n\t*(.*)\r\n\t*'), "")
+            object['reseller']          = string.join(webItem.select('./td[9]/div/a/text()').extract(), "")
             objects.append(object)
         return objects
 

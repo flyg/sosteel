@@ -2,6 +2,7 @@ from scraper.items import SteelItem
 from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.selector import HtmlXPathSelector
+import string
 
 class UsteelSpider(CrawlSpider):
     name = "usteel"
@@ -9,8 +10,8 @@ class UsteelSpider(CrawlSpider):
     start_urls = ["http://shop.usteel.com/index.php?app=gangcai"]
 
     rules = (
-        Rule(SgmlLinkExtractor(allow = ('index.php\?app=gangcai', ), deny = ('id=', )), callback = 'parse_item', follow = True),
-        Rule(SgmlLinkExtractor(allow = ('index.php\?app=buxiu', ), deny = ('id=', )), callback = 'parse_item', follow = True),
+        Rule(SgmlLinkExtractor(allow = ('index.php\?app=gangcai', ), deny = ('id=', 'city=', 'material=', 'manufacturer=', 'morespec=', 'specification=', 'cate_name=', 'morecat=', 'surface=', 'moresur=', )), callback = 'parse_item', follow = True),
+        Rule(SgmlLinkExtractor(allow = ('index.php\?app=buxiu', ), deny = ('id=', 'city=', 'material=', 'manufacturer=', 'morespec=', 'specification=', 'cate_name=', 'morecat=', 'surface=', 'moresur=', )), callback = 'parse_item', follow = True),
     )
 
     def parse_base(self, response):
@@ -19,15 +20,15 @@ class UsteelSpider(CrawlSpider):
         objects = [];
         for webItem in webItems:
             object = SteelItem()
-            object['name']              = webItem.select('*/span[@class="s1 textL"]/a/@title').extract()[0]
-            object['url']               = "http://shop.usteel.com/" + webItem.select('*/span[@class="s1 textL"]/a/@href').extract()[0]
-            object['model']             = webItem.select('*/span[@class="s2"]/text()').extract()[0]
-            object['size']              = webItem.select('*/span[@class="s3"]/text()').extract()[0]
-            object['producer']          = webItem.select('*/span[@class="s4"]/text()').extract()[0]
-            object['producer_location'] = webItem.select('*/span[@class="s5"]/text()').extract()[0]
-            object['price']             = webItem.select('*/span[@class="s6"]/b/text()').extract()[0]
-            object['stock']             = webItem.select('*/span[@class="s6"]/i/text()').extract()[0]
-            object['reseller']          = webItem.select('*/span[@class="s8 textL"]/a/@title').extract()[0]
+            object['name']              = string.join(webItem.select('*/span[@class="s1 textL"]/a/@title').extract(), "")
+            object['url']               = "http://shop.usteel.com/" + string.join(webItem.select('*/span[@class="s1 textL"]/a/@href').extract(), "")
+            object['model']             = string.join(webItem.select('*/span[@class="s2"]/text()').extract(), "")
+            object['size']              = string.join(webItem.select('*/span[@class="s3"]/text()').extract(), "")
+            object['producer']          = string.join(webItem.select('*/span[@class="s4"]/text()').extract(), "")
+            object['producer_location'] = string.join(webItem.select('*/span[@class="s5"]/text()').extract(), "")
+            object['price']             = string.join(webItem.select('*/span[@class="s6"]/b/text()').extract(), "")
+            object['stock']             = string.join(webItem.select('*/span[@class="s6"]/i/text()').extract(), "")
+            object['reseller']          = string.join(webItem.select('*/span[@class="s8 textL"]/a/@title').extract(), "")
             objects.append(object)
         return objects
 

@@ -32,16 +32,18 @@
       <file leaf-file-name="opsteel.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scraper/spiders/opsteel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="200" selection-end="211" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="33" column="107" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zhaogang.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="zhaogang.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scraper/spiders/zhaogang.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="200" selection-end="200" vertical-scroll-proportion="0.116504855">
+            <state line="31" column="58" selection-start="1803" selection-end="1815" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -76,11 +78,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usteel.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="usteel.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="637" selection-end="638" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="11" column="13" selection-start="390" selection-end="390" vertical-scroll-proportion="0.20573565">
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,15 +100,14 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/scraper/items.py" />
-        <option value="$PROJECT_DIR$/scraper/spiders/usteel.py" />
-        <option value="$PROJECT_DIR$/scraper/spiders/opsteel.py" />
         <option value="$PROJECT_DIR$/scraper/spiders/zhaogang.py" />
+        <option value="$PROJECT_DIR$/scraper/spiders/opsteel.py" />
+        <option value="$PROJECT_DIR$/scraper/spiders/usteel.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="218" />
-    <option name="y" value="75" />
+    <option name="y" value="22" />
     <option name="width" value="1680" />
     <option name="height" value="963" />
   </component>
@@ -192,8 +195,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="FullScreen" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -314,7 +317,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="218" y="75" width="1680" height="963" extended-state="0" />
+    <frame x="0" y="22" width="1680" height="963" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -322,7 +325,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15605876" sideWeight="0.6033254" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35629454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35524797" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -390,12 +393,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/scraper/spiders/usteel.py</url>
-          <line>16</line>
+          <line>17</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/scraper/spiders/usteel.py</url>
-          <line>28</line>
+          <line>29</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
@@ -406,7 +409,9 @@
     <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="49" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -427,7 +432,9 @@
     <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="64" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -441,7 +448,9 @@
     <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -452,16 +461,12 @@
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/Scrapy-0.16.4-py2.7.egg/scrapy/contrib/spidermiddleware/depth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="49" column="0" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/Scrapy-0.16.4-py2.7.egg/scrapy/contrib/spidermiddleware/urllength.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="32" column="0" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/Scrapy-0.16.4-py2.7.egg/scrapy/contrib/linkextractors/sgml.py">
@@ -478,17 +483,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="637" selection-end="638" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Python/2.7/site-packages/Scrapy-0.16.4-py2.7.egg/scrapy/contrib/spiders/crawl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="0" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/spiders/zhaogang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="58" selection-start="1803" selection-end="1815" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -501,14 +508,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scraper/spiders/opsteel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="200" selection-end="211" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="33" column="107" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scraper/spiders/zhaogang.py">
+    <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="200" selection-end="200" vertical-scroll-proportion="0.116504855">
+        <state line="11" column="13" selection-start="390" selection-end="390" vertical-scroll-proportion="0.20573565">
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
