@@ -10,8 +10,7 @@ class UsteelSpider(CrawlSpider):
     start_urls = ["http://www.zhaogang.com/spot/"]
 
     rules = (
-        Rule(SgmlLinkExtractor(allow=('/spot/\b', )), callback = 'parse_item', follow = True),
-        Rule(SgmlLinkExtractor(allow=('/spot/\?page=[0..9]*', )), callback = 'parse_item', follow = True),
+        Rule(SgmlLinkExtractor(allow=(r'/spot/\?page=\d{1,2}\b', )), callback = 'parse_item', follow = True),
         )
 
     def parse_base(self, response):

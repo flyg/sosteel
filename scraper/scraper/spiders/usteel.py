@@ -7,11 +7,11 @@ import string
 class UsteelSpider(CrawlSpider):
     name = "usteel"
     allowed_domains = ["shop.usteel.com"]
-    start_urls = ["http://shop.usteel.com/index.php?app=gangcai"]
+    start_urls = ["http://shop.usteel.com/index.php?app=gangcai", "http://shop.usteel.com/index.php?app=buxiu"]
 
     rules = (
-        Rule(SgmlLinkExtractor(allow = ('index.php\?app=gangcai', ), deny = ('id=', 'city=', 'material=', 'manufacturer=', 'morespec=', 'specification=', 'cate_name=', 'morecat=', 'surface=', 'moresur=', )), callback = 'parse_item', follow = True),
-        Rule(SgmlLinkExtractor(allow = ('index.php\?app=buxiu', ), deny = ('id=', 'city=', 'material=', 'manufacturer=', 'morespec=', 'specification=', 'cate_name=', 'morecat=', 'surface=', 'moresur=', )), callback = 'parse_item', follow = True),
+        Rule(SgmlLinkExtractor(allow = (r'index.php\?app=gangcai&page=\d{1,2}\b', ), deny = ('id=', 'city=', 'material=', 'manufacturer=', 'morespec=', 'specification=', 'cate_name=', 'morecat=', 'surface=', 'moresur=', )), callback = 'parse_item', follow = True),
+        Rule(SgmlLinkExtractor(allow = (r'index.php\?app=buxiu&page=\d{1,2}\b', ), deny = ('id=', 'city=', 'material=', 'manufacturer=', 'morespec=', 'specification=', 'cate_name=', 'morecat=', 'surface=', 'moresur=', )), callback = 'parse_item', follow = True),
     )
 
     def parse_base(self, response):

@@ -11,8 +11,7 @@ class OpsteelSpider(CrawlSpider):
     start_urls = ["http://www.opsteel.cn/quote/"]
 
     rules = (
-        Rule(SgmlLinkExtractor(allow=('/quote/\b', )), callback = 'parse_item', follow = True),
-        Rule(SgmlLinkExtractor(allow=('/quote/[0-9]*.html', )), callback = 'parse_item', follow = True),
+        Rule(SgmlLinkExtractor(allow=('/quote/\d{1,2}.html', )), callback = 'parse_item', follow = True),
     )
 
     def parse_base(self, response):
