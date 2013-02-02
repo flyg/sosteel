@@ -20,15 +20,15 @@ class UsteelSpider(CrawlSpider):
         for webItem in webItems:
             if (webItem.select('./td').__len__() >= 9):
                 object = SteelItem()
-                object['name']              = string.join(webItem.select('./td[1]/div/span/a/text()').extract(), "")
+                object['model']             = string.join(webItem.select('./td[1]/div/span/a/text()').extract(), "")
                 object['url']               = string.join(webItem.select('./td[9]/div/a/@href').extract(), "")
-                object['model']             = string.join(webItem.select('./td[3]/a/text()').extract(), "")
-                object['size']              = string.join(webItem.select('./td[2]/a/text()').extract(), "")
+                object['trademark']         = string.join(webItem.select('./td[3]/a/text()').extract(), "")
+                object['spec']              = string.join(webItem.select('./td[2]/a/text()').extract(), "")
                 object['producer']          = string.join(webItem.select('./td[4]/a/text()').extract(), "")
                 object['stock_location']    = string.join(webItem.select('./td[5]/text()').extract(), "")
                 object['price']             = string.join(webItem.select('./td[7]/text()').extract(), "")
-                object['stock']             = string.join(webItem.select('./td[6]/text()').extract(), "")
-                object['reseller']          = string.join(webItem.select('./td[8]/text()').extract(), "")
+                object['weight']            = string.join(webItem.select('./td[6]/text()').extract(), "")
+                object['provider']          = string.join(webItem.select('./td[8]/text()').extract(), "")
                 objects.append(object)
         return objects
 

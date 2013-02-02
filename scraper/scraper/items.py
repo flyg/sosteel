@@ -1,3 +1,4 @@
+# -*- coding=UTF-8 -*-
 # Define here the models for your scraped items
 #
 # See documentation in:
@@ -6,16 +7,21 @@
 from scrapy.item import Item, Field
 
 class SteelItem(Item):
-    name = Field()
-    url = Field()
-    model = Field()
-    size = Field()
-    stock = Field()
-    price = Field()
+    model = Field()             #品名
+    url = Field()               #原链接
+    trademark = Field()         #牌号
+    spec = Field()              #规格
+    weight = Field()            #总重
+    price = Field()             #价格
     producer = Field()
-    producer_location = Field()
-    stock_location = Field()
-    reseller = Field()
-    reseller_location = Field()
+    origin = Field()            #产地
+    stock_location = Field()    #仓库
+    provider = Field()          #供应商
     date = Field()
+
+
+
+
+
+
 

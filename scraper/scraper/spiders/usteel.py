@@ -20,15 +20,15 @@ class UsteelSpider(CrawlSpider):
         objects = [];
         for webItem in webItems:
             object = SteelItem()
-            object['name']              = string.join(webItem.select('*/span[@class="s1 textL"]/a/@title').extract(), "")
+            object['model']             = string.join(webItem.select('*/span[@class="s1 textL"]/a/@title').extract(), "")
             object['url']               = "http://shop.usteel.com/" + string.join(webItem.select('*/span[@class="s1 textL"]/a/@href').extract(), "")
-            object['model']             = string.join(webItem.select('*/span[@class="s2"]/text()').extract(), "")
-            object['size']              = string.join(webItem.select('*/span[@class="s3"]/text()').extract(), "")
+            object['trademark']         = string.join(webItem.select('*/span[@class="s2"]/text()').extract(), "")
+            object['spec']              = string.join(webItem.select('*/span[@class="s3"]/text()').extract(), "")
             object['producer']          = string.join(webItem.select('*/span[@class="s4"]/text()').extract(), "")
-            object['producer_location'] = string.join(webItem.select('*/span[@class="s5"]/text()').extract(), "")
+            object['origin']            = string.join(webItem.select('*/span[@class="s5"]/text()').extract(), "") + string.join(webItem.select('*/span[@class="s5"]/i/text()').extract(), "")
             object['price']             = string.join(webItem.select('*/span[@class="s6"]/b/text()').extract(), "")
-            object['stock']             = string.join(webItem.select('*/span[@class="s6"]/i/text()').extract(), "")
-            object['reseller']          = string.join(webItem.select('*/span[@class="s8 textL"]/a/@title').extract(), "")
+            object['weight']            = string.join(webItem.select('*/span[@class="s6"]/i[2]/text()').extract(), "")
+            object['provider']          = string.join(webItem.select('*/span[@class="s8 textL"]/a/@title').extract(), "")
             objects.append(object)
         return objects
 
