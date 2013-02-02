@@ -34,7 +34,7 @@ class UsteelSpider(CrawlSpider):
         return objects
 
     def parse_start_url(self, response):
-        self.parse_base(response)
+        return self.parse_base(response)
 
     def parse_item(self, response):
-        self.parse_base(response)
+        return self.parse_base(response)
