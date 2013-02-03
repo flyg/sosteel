@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="50b97e46-73c7-4dd1-874d-16082edf3613" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scraper/items.py" afterPath="$PROJECT_DIR$/scraper/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scraper/spiders/opsteel.py" afterPath="$PROJECT_DIR$/scraper/spiders/opsteel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scraper/spiders/usteel.py" afterPath="$PROJECT_DIR$/scraper/spiders/usteel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scraper/spiders/zhaogang.py" afterPath="$PROJECT_DIR$/scraper/spiders/zhaogang.py" />
     </list>
     <ignored path="scraper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +22,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="items.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="items.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scraper/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="34" selection-start="446" selection-end="474" vertical-scroll-proportion="0.4651163">
+            <state line="10" column="36" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -38,8 +34,10 @@
       <file leaf-file-name="zhaogang.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scraper/spiders/zhaogang.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="44" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="10" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,9 +46,7 @@
         <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,8 +54,19 @@
       <file leaf-file-name="opsteel.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scraper/spiders/opsteel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="108" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.0">
+            <state line="18" column="8" selection-start="569" selection-end="602" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="511steel.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scraper/spiders/511steel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="39" selection-start="932" selection-end="932" vertical-scroll-proportion="0.2244389">
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,12 +88,13 @@
         <option value="$PROJECT_DIR$/scraper/spiders/opsteel.py" />
         <option value="$PROJECT_DIR$/scraper/items.py" />
         <option value="$PROJECT_DIR$/scraper/spiders/usteel.py" />
+        <option value="$PROJECT_DIR$/scraper/spiders/511steel.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="649" />
-    <option name="y" value="58" />
+    <option name="x" value="308" />
+    <option name="y" value="108" />
     <option name="width" value="1680" />
     <option name="height" value="963" />
   </component>
@@ -104,7 +112,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -115,7 +123,61 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scraper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scraper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scraper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scraper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scraper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scraper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scraper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scraper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scraper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spiders" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -264,17 +326,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="649" y="58" width="1680" height="963" extended-state="0" />
+    <frame x="308" y="108" width="1680" height="963" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15605876" sideWeight="0.6033254" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15605876" sideWeight="0.6448931" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3551069" sideWeight="0.49510404" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3551069" sideWeight="0.500612" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3551069" sideWeight="0.500612" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -353,15 +415,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="49" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Python/2.7/site-packages/Scrapy-0.16.4-py2.7.egg/scrapy/contrib/spiders/crawl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="0" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" />
@@ -377,9 +430,7 @@
     <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="64" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -393,9 +444,7 @@
     <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -426,21 +475,26 @@
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/Scrapy-0.16.4-py2.7.egg/scrapy/contrib/linkextractors/sgml.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="8" selection-start="3427" selection-end="3427" vertical-scroll-proportion="0.0">
+        <state line="96" column="8" selection-start="3427" selection-end="3427" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="36" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scraper/spiders/zhaogang.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scraper/spiders/usteel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="10" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -449,15 +503,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scraper/spiders/opsteel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="108" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.0">
+        <state line="18" column="8" selection-start="569" selection-end="602" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scraper/items.py">
+    <entry file="file://$PROJECT_DIR$/scraper/spiders/511steel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="446" selection-end="474" vertical-scroll-proportion="0.4651163">
-          <folding />
+        <state line="12" column="39" selection-start="932" selection-end="932" vertical-scroll-proportion="0.2244389">
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
