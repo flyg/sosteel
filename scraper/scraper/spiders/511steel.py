@@ -21,6 +21,7 @@ class UsteelSpider(CrawlSpider):
         objects = [];
         for webItem in webItems:
             object = SteelItem()
+            object['url']               = "http://www.511steel.com/Customer/Resource/Purchase.aspx"
             hxs = HtmlXPathSelector(text = webItem[1])
             object['model']             = string.join(hxs.select('*/div/text()').extract(), "")
             hxs = HtmlXPathSelector(text = webItem[2])
