@@ -4,7 +4,7 @@ from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.selector import HtmlXPathSelector
 import string
 
-class UsteelSpider(CrawlSpider):
+class ZhaogangSpider(CrawlSpider):
     name = "zhaogang"
     allowed_domains = ["www.zhaogang.com"]
     start_urls = ["http://www.zhaogang.com/spot/"]
