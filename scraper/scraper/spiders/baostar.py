@@ -27,7 +27,7 @@ class BaostarSpider(CrawlSpider):
             method='POST',
             cookies={'stopflag':'false', 'flag':'true'},
             headers=modified_headers,
-            body='inqu_status-0-segNo=00100&inqu_status-0-platRegion=80&inqu_status-0-ifNew=1&inqu_status-0-ifJP=1&inqu_status-0-ifNormal=1&limit=1000&offset=24&isAjax=true', #limit cannot go beyond 1000
+            body='inqu_status-0-segNo=00100&inqu_status-0-platRegion=80&inqu_status-0-ifNew=1&inqu_status-0-ifJP=1&inqu_status-0-ifNormal=1&limit=1000&offset=0&isAjax=true', #limit cannot go beyond 1000
             callback=self.parse_content)]
 
     def parse_content(self, response):
